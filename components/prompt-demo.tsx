@@ -63,6 +63,28 @@ export function PromptDemo() {
     }
   }, [])
 
+  // Listen for prompt injection events from other components (like Gallery or Hero)
+  useEffect(() => {
+    const handleUseGalleryPrompt = (e: Event) => {
+      const customEvent = e as CustomEvent
+      if (customEvent.detail) {
+        const { prompt: newPrompt, model = 'phoenix-pro', quality = 'excellent', aspectRatio: newRatio = '1:1', seed: newSeed = '' } = customEvent.detail
+        setPrompt(newPrompt)
+        setSelectedModel(model)
+        setSelectedQuality(quality)
+        setAspectRatio(newRatio)
+        setCustomSeed(newSeed.toString())
+        setImageLoaded(false)
+        reset() // Reset generator states
+      }
+    }
+    
+    window.addEventListener('use-gallery-prompt', handleUseGalleryPrompt)
+    return () => {
+      window.removeEventListener('use-gallery-prompt', handleUseGalleryPrompt)
+    }
+  }, [reset])
+
   // Helper to save history
   const saveHistory = (newHistory: GenerationResult[]) => {
     setHistory(newHistory)
@@ -177,7 +199,7 @@ export function PromptDemo() {
   }
 
   return (
-    <section className="relative py-20 sm:py-32 px-4 overflow-hidden">
+    <section id="generator" className="relative py-20 sm:py-32 px-4 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-accent/10 via-transparent to-primary/5 -z-10" />
 
