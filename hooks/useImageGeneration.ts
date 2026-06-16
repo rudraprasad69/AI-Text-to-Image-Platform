@@ -114,12 +114,53 @@ export function useImageGeneration(): UseImageGenerationReturn {
           throw new Error(data.error || 'Generation failed')
         }
 
+        // Client-side image preloader utility to cache image before finalizing state
+        const preloadImage = (url: string) => {
+          return new Promise<void>((resolve, reject) => {
+            const img = new Image()
+            img.src = url
+            img.onload = () => resolve()
+            img.onerror = () => reject(new Error('Image load failed'))
+          })
+        }
+
+        // Preload image with automatic seed rotation on error (up to 3 attempts)
+        let preloadSuccess = false
+        let activeImageUrl = data.imageUrl
+        let activeSeed = data.seed
+
+        for (let attempt = 1; attempt <= 3; attempt++) {
+          try {
+            await preloadImage(activeImageUrl)
+            preloadSuccess = true
+            break
+          } catch (preloadErr) {
+            console.warn(`[Hook] Image load failed on attempt ${attempt}/3`)
+            if (attempt === 3) break
+            
+            // Rotate to a new random seed and rebuild URL
+            activeSeed = Math.floor(Math.random() * 10000000)
+            try {
+              const urlObj = new URL(activeImageUrl)
+              urlObj.searchParams.set('seed', activeSeed.toString())
+              activeImageUrl = urlObj.toString()
+              console.log(`[Hook] Retrying with rotated seed: ${activeSeed}`)
+            } catch (urlErr) {
+              console.error('[Hook] Failed to rebuild URL with rotated seed:', urlErr)
+            }
+          }
+        }
+
+        if (!preloadSuccess) {
+          throw new Error('Image generation service is currently overloaded. Please try again with a different prompt.')
+        }
+
         const newResult: GenerationResult = {
-          imageUrl: data.imageUrl,
+          imageUrl: activeImageUrl,
           generationTime: data.generationTime,
           resolution: data.resolution,
           quality: data.quality,
-          seed: data.seed,
+          seed: activeSeed,
           aspectRatio: data.aspectRatio || '1:1',
           model: data.model || model,
           prompt: data.prompt || prompt,
