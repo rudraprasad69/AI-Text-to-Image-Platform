@@ -6,14 +6,31 @@ export interface GenerationResult {
   generationTime: number
   resolution: string
   quality: string
+  seed: number
+  aspectRatio: string
+  model: string
+  prompt: string
+  timestamp: number
+}
+
+export interface GenerationConfig {
+  aspectRatio?: string
+  seed?: number
+  enhance?: boolean
 }
 
 export interface UseImageGenerationReturn {
   isGenerating: boolean
   error: string | null
   result: GenerationResult | null
-  generateImage: (prompt: string, model?: string, quality?: string) => Promise<void>
+  generateImage: (
+    prompt: string,
+    model?: string,
+    quality?: string,
+    config?: GenerationConfig
+  ) => Promise<GenerationResult | undefined>
   reset: () => void
+  setResult: (result: GenerationResult | null) => void
 }
 
 export function useImageGeneration(): UseImageGenerationReturn {
@@ -22,7 +39,12 @@ export function useImageGeneration(): UseImageGenerationReturn {
   const [result, setResult] = useState<GenerationResult | null>(null)
 
   const generateImage = useCallback(
-    async (prompt: string, model = 'phoenix-pro', quality = 'excellent') => {
+    async (
+      prompt: string,
+      model = 'phoenix-pro',
+      quality = 'excellent',
+      config?: GenerationConfig
+    ): Promise<GenerationResult | undefined> => {
       if (!prompt.trim()) {
         setError('Please enter a prompt')
         return
@@ -50,6 +72,9 @@ export function useImageGeneration(): UseImageGenerationReturn {
                 prompt,
                 model,
                 quality,
+                aspectRatio: config?.aspectRatio,
+                seed: config?.seed,
+                enhance: config?.enhance ?? true,
               }),
             })
             break
@@ -89,12 +114,20 @@ export function useImageGeneration(): UseImageGenerationReturn {
           throw new Error(data.error || 'Generation failed')
         }
 
-        setResult({
+        const newResult: GenerationResult = {
           imageUrl: data.imageUrl,
           generationTime: data.generationTime,
           resolution: data.resolution,
           quality: data.quality,
-        })
+          seed: data.seed,
+          aspectRatio: data.aspectRatio || '1:1',
+          model: data.model || model,
+          prompt: data.prompt || prompt,
+          timestamp: data.timestamp || Date.now(),
+        }
+
+        setResult(newResult)
+        return newResult
       } catch (err) {
         const message = err instanceof Error ? err.message : 'An error occurred'
         setError(message)
@@ -118,5 +151,6 @@ export function useImageGeneration(): UseImageGenerationReturn {
     result,
     generateImage,
     reset,
+    setResult,
   }
 }
