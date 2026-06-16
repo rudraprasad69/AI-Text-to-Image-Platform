@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@import 'shadcn/tailwind.css';
+
+@theme {
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    @apply bg-slate-950 font-sans;
+  }
+
+  body {
+    @apply text-slate-100 bg-slate-950;
+  }
+
+  /* Smooth transitions on interactive elements */
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  /* Premium gradient backgrounds */
+  .bg-gradient-premium {
+    @apply bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-pink-500/5;
+  }
+
+  .bg-gradient-accent {
+    @apply bg-gradient-to-r from-indigo-500 to-purple-500;
+  }
+
+  /* Glass morphism effect */
+  .glass-card {
+    @apply relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl;
+  }
+
+  /* Glow effects */
+  .glow-primary {
+    @apply shadow-lg shadow-indigo-500/20;
+  }
+
+  .glow-accent {
+    @apply shadow-lg shadow-indigo-500/40;
+  }
+
+  /* Smooth hover elevation */
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  /* Premium button base */
+  .btn-premium {
+    @apply relative inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 overflow-hidden;
+  }
+
+  /* Premium input base */
+  .input-premium {
+    @apply bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-transparent transition-all duration-200;
+  }
+}
