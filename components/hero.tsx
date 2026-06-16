@@ -33,6 +33,27 @@ const slideshowItems = [
     url: 'https://image.pollinations.ai/prompt/cosmic%20abstract%20swirling%20ribbons%20of%20liquid%20gold%20and%20cyan%20energy%20in%20deep%20space%203d%20render%20masterpiece?model=flux&width=1024&height=576&seed=111&nologo=true',
     seed: 111,
     model: 'Phoenix Pro (Flux)'
+  },
+  {
+    title: 'Vintage Explorer Portrait',
+    prompt: 'Close-up portrait of an old rugged explorer with weather-beaten face, deep wrinkles, kind eyes, leather hat, soft warm natural light, highly realistic, 8k resolution, national geographic style',
+    url: 'https://image.pollinations.ai/prompt/close-up%20portrait%20of%20an%20old%20rugged%20explorer%20with%20weather-beaten%20face%2C%20deep%20wrinkles%2C%20kind%20eyes%2C%20leather%20hat%2C%20soft%20warm%20natural%20light%2C%20highly%20realistic%2C%208k%20resolution%2C%20national%20geographic%20style?model=flux&width=1024&height=576&seed=555&nologo=true',
+    seed: 555,
+    model: 'Phoenix Pro (Flux)'
+  },
+  {
+    title: 'Misty Autumn Lake',
+    prompt: 'A peaceful lake surrounded by trees with vibrant red and orange autumn leaves, covered in light morning fog, still water reflecting trees, photorealistic, cinematic landscape',
+    url: 'https://image.pollinations.ai/prompt/a%20peaceful%20lake%20surrounded%20by%20trees%20with%20vibrant%20red%20and%20orange%20autumn%20leaves%2C%20covered%20in%20light%20morning%20fog%2C%20still%20water%20reflecting%20trees%2C%20photorealistic%2C%20cinematic%20landscape?model=flux&width=1024&height=576&seed=666&nologo=true',
+    seed: 666,
+    model: 'Phoenix Pro (Flux)'
+  },
+  {
+    title: 'Glass Villa in the Woods',
+    prompt: 'Modern architectural glass villa surrounded by a pine forest in the snow at dusk, interior warm lights glowing, architectural digest photography, highly detailed, photorealistic',
+    url: 'https://image.pollinations.ai/prompt/modern%20architectural%20glass%20villa%20surrounded%20by%20a%20pine%20forest%20in%20the%20snow%20at%20dusk%2C%20interior%20warm%20lights%20glowing%2C%20architectural%20digest%20photography%2C%20highly%20detailed%2C%20photorealistic?model=flux&width=1024&height=576&seed=444&nologo=true',
+    seed: 444,
+    model: 'Phoenix Pro (Flux)'
   }
 ]
 
