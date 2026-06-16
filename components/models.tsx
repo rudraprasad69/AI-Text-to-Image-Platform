@@ -4,6 +4,7 @@ import { Check } from 'lucide-react'
 
 const models = [
   {
+    id: 'phoenix-pro',
     name: 'Phoenix Pro',
     description: 'Lightning-fast generation with exceptional quality',
     speed: '2-3s',
@@ -12,6 +13,7 @@ const models = [
     badge: 'Most Popular',
   },
   {
+    id: 'quantum-ultra',
     name: 'Quantum Ultra',
     description: 'Highest quality with advanced customization',
     speed: '5-7s',
@@ -20,6 +22,7 @@ const models = [
     badge: 'Premium',
   },
   {
+    id: 'nova-light',
     name: 'Nova Light',
     description: 'Optimized for speed and efficiency',
     speed: '1-2s',
@@ -30,6 +33,19 @@ const models = [
 ]
 
 export function Models() {
+  const handleSelectModel = (modelId: string) => {
+    const event = new CustomEvent('select-generator-model', {
+      detail: { model: modelId }
+    })
+    window.dispatchEvent(event)
+    
+    // Smooth scroll to generator workspace
+    const generatorElement = document.getElementById('generator')
+    if (generatorElement) {
+      generatorElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <section id="models" className="relative py-20 sm:py-32 px-4 overflow-hidden">
       {/* Background elements */}
@@ -94,7 +110,10 @@ export function Models() {
                   ))}
                 </div>
 
-                <button className="w-full py-3 rounded-lg font-semibold transition-all duration-300 border border-border hover:border-accent/50 hover:bg-accent/10 text-foreground">
+                <button
+                  onClick={() => handleSelectModel(model.id)}
+                  className="w-full py-3 rounded-lg font-semibold transition-all duration-300 border border-border hover:border-accent/50 hover:bg-accent/10 text-foreground cursor-pointer"
+                >
                   Select Model
                 </button>
               </div>

@@ -85,6 +85,21 @@ export function PromptDemo() {
     }
   }, [reset])
 
+  // Listen for model selection events from other components (like Models)
+  useEffect(() => {
+    const handleSelectModelEvent = (e: Event) => {
+      const customEvent = e as CustomEvent
+      if (customEvent.detail && customEvent.detail.model) {
+        setSelectedModel(customEvent.detail.model)
+      }
+    }
+    
+    window.addEventListener('select-generator-model', handleSelectModelEvent)
+    return () => {
+      window.removeEventListener('select-generator-model', handleSelectModelEvent)
+    }
+  }, [])
+
   // Helper to save history
   const saveHistory = (newHistory: GenerationResult[]) => {
     setHistory(newHistory)
