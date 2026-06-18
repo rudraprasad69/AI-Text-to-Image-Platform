@@ -29,7 +29,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/majestic%20norwegian%20fjords%20at%20golden%20hour%2C%20reflection%20in%20crystal%20clear%20water%2C%20epic%20lighting%2C%208k%20resolution%2C%20cinematic?model=flux&width=1024&height=1024&seed=12345&nologo=true'
+    url: '/images/gallery/fjords.png'
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/cyberpunk%20futuristic%20oasis%20in%20a%20desert%2C%20glowing%20blue%20pools%2C%20neon%20palm%20trees%2C%20synthwave%20aesthetic%2C%20detailed?model=flux&width=1024&height=1024&seed=54321&nologo=true'
+    url: '/images/gallery/neon_oasis.png'
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/minimalist%20zen%20rock%20garden%20with%20raked%20sand%20patterns%2C%20cherry%20blossom%20tree%2C%20tranquil%20atmosphere%2C%20soft%20morning%20sunlight?model=flux&width=1024&height=1024&seed=55667&nologo=true'
+    url: '/images/gallery/zen_garden.png'
   },
   // 2. Portrait
   {
@@ -63,7 +63,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/close%20up%20portrait%20of%20a%20cyberpunk%20female%20cyborg%20with%20glowing%20blue%20neon%20details%2C%20highly%20detailed%20face%2C%20realistic%20skin%20texture%2C%20masterpiece?model=flux&width=1024&height=1024&seed=98765&nologo=true'
+    url: '/images/gallery/android.png'
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/mystical%20forest%20mage%20with%20a%20glowing%20staff%2C%20green%20cloak%2C%20deep%20eyes%2C%20fantasy%20style%2C%20magical%20atmosphere%2C%20detailed?model=flux&width=1024&height=1024&seed=67890&nologo=true'
+    url: '/images/gallery/forest_mage.png'
   },
   {
     id: 6,
@@ -85,7 +85,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/portrait%20of%20a%20graceful%20dancer%20surrounded%20by%20colorful%20swirling%20energy%20particles%2C%20long%20exposure%20aesthetic%2C%20dreamlike%20lighting?model=flux&width=1024&height=1024&seed=44332&nologo=true'
+    url: '/images/gallery/aura_dancer.png'
   },
   // 3. Abstract
   {
@@ -97,7 +97,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/abstract%20floating%203d%20liquid%20gold%20and%20purple%20metallic%20ribbons%2C%20swirling%20energy%2C%20volumetric%20lighting%2C%20dark%20backdrop%2C%20premium%20design?model=flux&width=1024&height=1024&seed=11223&nologo=true'
+    url: '/images/gallery/cosmic_fluidity.png'
   },
   {
     id: 8,
@@ -108,7 +108,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/abstract%20minimalist%20geometric%20composition%20with%20pastel%20spheres%2C%20rings%2C%20and%20steps%2C%20soft%20lighting%2C%203d%20render%2C%20modern%20art?model=flux&width=1024&height=1024&seed=44556&nologo=true'
+    url: '/images/gallery/geometric_dream.png'
   },
   // 4. Fantasy
   {
@@ -120,7 +120,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/ancient%20citadel%20built%20on%20a%20jagged%20mountain%20peak%2C%20a%20giant%20dragon%20soaring%20above%2C%20dramatic%20storm%20clouds%2C%20epic%20fantasy%20illustration?model=flux&width=1024&height=1024&seed=88990&nologo=true'
+    url: '/images/gallery/dragon_citadel.png'
   },
   {
     id: 10,
@@ -131,7 +131,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/enchanted%20forest%20with%20bioluminescent%20glowing%20mushrooms%20and%20floating%20fireflies%2C%20ancient%20hollow%20tree%2C%20magical%20fairytale%20concept%20art?model=flux&width=1024&height=1024&seed=33445&nologo=true'
+    url: '/images/gallery/whispering_woods.png'
   },
   // 5. Product
   {
@@ -143,7 +143,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/studio%20lighting%20shot%20of%20a%20luxury%20black%20chronograph%20watch%20with%20gold%20accents%2C%20resting%20on%20a%20dark%20marble%20slab%2C%20professional%20product%20photography?model=flux&width=1024&height=1024&seed=77665&nologo=true'
+    url: '/images/gallery/luxury_timepiece.png'
   },
   {
     id: 12,
@@ -154,7 +154,7 @@ const galleryItems: GalleryItem[] = [
     model: 'Phoenix Pro (Flux)',
     resolution: '1024x1024 (1:1)',
     quality: 'excellent',
-    url: 'https://image.pollinations.ai/prompt/high-end%20futuristic%20sneaker%20floating%20in%20mid-air%2C%20neon%20glowing%20sole%2C%20dark%20smoky%20studio%20background%2C%20professional%20advertisement%20photography?model=flux&width=1024&height=1024&seed=99001&nologo=true'
+    url: '/images/gallery/futuristic_footwear.png'
   }
 ]
 

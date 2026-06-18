@@ -9,49 +9,49 @@ const slideshowItems = [
   {
     title: 'Cyberpunk Neon City',
     prompt: 'Cyberpunk neon city street with flying vehicles and holographic signs, futuristic, masterpiece, 8k resolution',
-    url: 'https://image.pollinations.ai/prompt/cyberpunk%20neon%20city%20street%20with%20flying%20vehicles%20and%20holographic%20signs%20futuristic%20highly%20detailed%20cinematic?model=flux&width=1024&height=576&seed=777&nologo=true',
+    url: '/images/hero/neon_city.png',
     seed: 777,
     model: 'Phoenix Pro (Flux)'
   },
   {
     title: 'Bioluminescent Forest',
     prompt: 'Enchanted magical forest with glowing mushrooms, bioluminescent fairytale, volumetric lighting, hyperdetailed',
-    url: 'https://image.pollinations.ai/prompt/enchanted%20magical%20forest%20with%20glowing%20mushrooms%20bioluminescent%20fairytale%20volumetric%20lighting?model=flux&width=1024&height=576&seed=888&nologo=true',
+    url: '/images/hero/bioluminescent_forest.png',
     seed: 888,
     model: 'Phoenix Pro (Flux)'
   },
   {
     title: 'Nebula Explorer',
     prompt: 'Futuristic astronaut standing on a foreign planet looking at a distant nebula, epic sci-fi digital art, masterpiece',
-    url: 'https://image.pollinations.ai/prompt/futuristic%20astronaut%20standing%20on%20a%20foreign%20planet%20looking%20at%20a%20distant%20nebula%20epic%20sci%20fi%20masterpiece?model=flux&width=1024&height=576&seed=999&nologo=true',
+    url: '/images/hero/nebula_explorer.png',
     seed: 999,
     model: 'Phoenix Pro (Flux)'
   },
   {
     title: 'Cosmic Fluidity',
     prompt: 'Cosmic abstract swirling ribbons of liquid gold and cyan energy in deep space, volumetric lighting, 3d render',
-    url: 'https://image.pollinations.ai/prompt/cosmic%20abstract%20swirling%20ribbons%20of%20liquid%20gold%20and%20cyan%20energy%20in%20deep%20space%203d%20render%20masterpiece?model=flux&width=1024&height=576&seed=111&nologo=true',
+    url: '/images/hero/cosmic_ribbons.png',
     seed: 111,
     model: 'Phoenix Pro (Flux)'
   },
   {
     title: 'Vintage Explorer Portrait',
     prompt: 'Close-up portrait of an old rugged explorer with weather-beaten face, deep wrinkles, kind eyes, leather hat, soft warm natural light, highly realistic, 8k resolution, national geographic style',
-    url: 'https://image.pollinations.ai/prompt/close-up%20portrait%20of%20an%20old%20rugged%20explorer%20with%20weather-beaten%20face%2C%20deep%20wrinkles%2C%20kind%20eyes%2C%20leather%20hat%2C%20soft%20warm%20natural%20light%2C%20highly%20realistic%2C%208k%20resolution%2C%20national%20geographic%20style?model=flux&width=1024&height=576&seed=555&nologo=true',
+    url: '/images/hero/vintage_explorer.png',
     seed: 555,
     model: 'Phoenix Pro (Flux)'
   },
   {
     title: 'Misty Autumn Lake',
     prompt: 'A peaceful lake surrounded by trees with vibrant red and orange autumn leaves, covered in light morning fog, still water reflecting trees, photorealistic, cinematic landscape',
-    url: 'https://image.pollinations.ai/prompt/a%20peaceful%20lake%20surrounded%20by%20trees%20with%20vibrant%20red%20and%20orange%20autumn%20leaves%2C%20covered%20in%20light%20morning%20fog%2C%20still%20water%20reflecting%20trees%2C%20photorealistic%2C%20cinematic%20landscape?model=flux&width=1024&height=576&seed=666&nologo=true',
+    url: '/images/hero/misty_lake.png',
     seed: 666,
     model: 'Phoenix Pro (Flux)'
   },
   {
     title: 'Glass Villa in the Woods',
     prompt: 'Modern architectural glass villa surrounded by a pine forest in the snow at dusk, interior warm lights glowing, architectural digest photography, highly detailed, photorealistic',
-    url: 'https://image.pollinations.ai/prompt/modern%20architectural%20glass%20villa%20surrounded%20by%20a%20pine%20forest%20in%20the%20snow%20at%20dusk%2C%20interior%20warm%20lights%20glowing%2C%20architectural%20digest%20photography%2C%20highly%20detailed%2C%20photorealistic?model=flux&width=1024&height=576&seed=444&nologo=true',
+    url: '/images/hero/glass_villa.png',
     seed: 444,
     model: 'Phoenix Pro (Flux)'
   }
