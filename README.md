@@ -27,7 +27,7 @@
 
 A live version of the application is hosted here:
 
-**[Add Deployment URL Here]**
+[**[Add Deployment URL Here]**](https://ai-text-to-image-platform.netlify.app/)
 
 ---
 
