@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="1600" height="704" alt="PixelForge-Promptsection" src="https://github.com/user-attachments/assets/fdb0f312-06ab-474e-8aad-1235f06f04f5" />
+<img width="1600" height="709" alt="PixelForge-Dashboard" src="https://github.com/user-attachments/assets/d0350391-8b21-4832-94f0-d065cbf15edf" />
 
 <br />
 <br />
