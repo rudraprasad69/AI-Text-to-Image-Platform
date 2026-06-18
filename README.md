@@ -27,7 +27,7 @@
 
 A live version of the application is hosted here:
 
-[**[PixelForge AI]**](https://ai-text-to-image-platform.netlify.app/)
+[**PixelForge AI**](https://ai-text-to-image-platform.netlify.app/)
 
 ---
 
