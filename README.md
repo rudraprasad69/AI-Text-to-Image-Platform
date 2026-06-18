@@ -34,7 +34,7 @@ A live version of the application is hosted here:
 ## 🎥 Demo Video
 
 <p align="center">
-  <a href="https://youtu.be/l9b0cWi2kYM">
+  <a href="[https://youtu.be/l9b0cWi2kYM](https://youtu.be/qf-swgrygWA?si=nG8Dc_VsuHO74iyK)">
     <img src="https://img.shields.io/badge/▶️_Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
 </p>
