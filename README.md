@@ -34,8 +34,8 @@ A live version of the application is hosted here:
 ## 🎥 Demo Video
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=qf-swgrygWA" target="_blank">
-    ▶️ Watch PixelForge AI Demo
+  <a href="https://www.youtube.com/watch?v=qf-swgrygWA">
+    <img src="https://img.shields.io/badge/▶️_WATCH_DEMO-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
   </a>
 </p>
 
