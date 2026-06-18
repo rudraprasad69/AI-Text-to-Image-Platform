@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="1600" height="700" alt="PixelForge AI" src="https://github.com/user-attachments/assets/PLACEHOLDER_IMAGE_ID" />
+<img width="1600" height="704" alt="PixelForge-Promptsection" src="https://github.com/user-attachments/assets/fdb0f312-06ab-474e-8aad-1235f06f04f5" />
 
 <br />
 <br />
