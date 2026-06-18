@@ -1,87 +1,238 @@
-# PixelForge AI - Premium Image Generation Platform
+<div align="center">
 
-Welcome to **PixelForge AI**, a state-of-the-art, high-performance web portal designed for digital artists, designers, and developers. PixelForge provides an elegant, premium interface for generating high-fidelity AI artwork using three specialized image-generation engines. It features an interactive prompt generation sandbox, detailed model comparison matrix, customizable quality settings, a pricing credit estimator, a gallery lightbox, and an automated conversational FAQ chatbot assistant.
+<img width="1600" height="700" alt="PixelForge AI" src="https://github.com/user-attachments/assets/PLACEHOLDER_IMAGE_ID" />
+
+<br /><br />
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" />
+</p>
+
+<h1>🎨 PixelForge AI</h1>
+
+<p>
+  <strong>Premium AI Image Generation SaaS Platform with multi-model engines, prompt sandbox, pricing intelligence, and interactive creative studio experience.</strong>
+</p>
+
+<p>
+  <a href="#-live-demo">
+    <img src="https://img.shields.io/badge/🚀_LIVE_DEMO-000000?style=for-the-badge" />
+  </a>
+  <a href="#-demo-video">
+    <img src="https://img.shields.io/badge/🎥_DEMO_VIDEO-FF0000?style=for-the-badge" />
+  </a>
+  <a href="#-architecture">
+    <img src="https://img.shields.io/badge/🧠_ARCHITECTURE-111111?style=for-the-badge" />
+  </a>
+  <a href="#-features">
+    <img src="https://img.shields.io/badge/✨_FEATURES-000000?style=for-the-badge" />
+  </a>
+</p>
+
+</div>
 
 ---
 
-## 1. Project Overview & Architecture
-The platform is designed to showcase high-fidelity image synthesis. It implements premium design aesthetics including glassmorphism, responsive HSL dark theme values, gradient text overlays, micro-interactions, and a custom HTML5 canvas particle background to maximize user engagement. 
+## 🚀 Live Demo
 
-### Key Modules:
-- **Interactive Prompt Sandbox (`PromptDemo`)**: Live prompt builder allowing users to select engine models, quality profiles, and run mock generations with real-time feedback (generation speed, cost, and output metadata).
-- **Hero Slider (`Hero`)**: Slideshow of 7 preset artistic categories showing prompt construction, seed, and generated output.
-- **Media Gallery & Details Lightbox (`Gallery`)**: Category-filtered image grid (Landscape, Portrait, Abstract, Fantasy, Product) with hover overlays and full-screen preview lightbox modals featuring download and sharing functionality.
-- **Pricing & Credit Estimator (`Pricing`)**: Interactive credit estimation slider, billing toggle (monthly/annual), and step-by-step payment wizard.
-- **Conversational FAQ Chatbot (`Chatbot`)**: Floating interactive widget providing immediate customer support for models, billing, API usage, and security.
+**https://your-deployment-url.com**
 
 ---
 
-## 2. Technology Stack
+## 🎥 Demo Video
 
-### Frontend & Core
-- **Framework**: **Next.js 16.2.6 (Turbopack)** - Server-side rendering, API routing, and component optimization.
-- **Runtime & Render Layer**: **React 19** & **TypeScript 5.7.3** - Ensuring strict type safety and modern hooks implementation.
-- **Styling & Theme**: **Tailwind CSS 4.2.0** & **PostCSS** - Utilizing utility classes, custom animation config, and standard glassmorphic effects.
-- **Animations**: **Framer Motion 12.40.0** - Enabling spring-based layout transitions, fade-ins, sliding panels, and hover states.
-- **Iconography**: **Lucide React 1.16.0** - Clean, vector icons for UI state indicators.
-
-### Backend & API Routes
-- **Image Generation Endpoints (`/api/generate`)**:
-  - Accept POST requests containing prompt, model, and quality parameters.
-  - Dynamically output deterministic vector SVG mockups base64 encoded as data URIs using hash mappings.
-- **Models Metadata Endpoint (`/api/models`)**:
-  - GET API supplying properties, latency scores, and computational credit costs.
+<p align="center">
+  <a href="https://youtu.be/l9b0cWi2kYM">
+    <img src="https://img.shields.io/badge/▶️_Watch_Full_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  </a>
+</p>
 
 ---
 
-## 3. Directory Structure
-```bash
+## 🧠 System Architecture Overview
+
+PixelForge AI is built on a **modern full-stack serverless architecture** optimized for performance, scalability, and modular AI workflows.
+
+```
+Client Layer (Next.js App Router)
+        ↓
+UI Components (React + Tailwind + Framer Motion)
+        ↓
+API Layer (Next.js Route Handlers)
+        ↓
+Generation Engine (Mock AI + Model Mapper)
+        ↓
+Response Formatter (SVG/Base64/Image Metadata)
+        ↓
+UI Rendering Layer (Gallery / Lightbox / Prompt Sandbox)
+```
+
+### ⚙️ Key Design Principles
+
+- Component-driven architecture
+- Stateless API route handlers
+- Deterministic AI simulation layer
+- Edge-optimized UI rendering
+- Fully modular UI system (shadcn-based)
+
+---
+
+## ✨ Key Features
+
+### 🎯 AI Generation Engine
+- Multi-model system (Phoenix Pro, Quantum Ultra, Nova Light)
+- Deterministic prompt-to-image simulation
+- Real-time cost estimation per generation
+
+### 🧠 Prompt Sandbox Studio
+- Interactive prompt builder
+- Random prompt generator
+- Live parameter tuning system
+
+### 💰 Smart Pricing Engine
+- Credit-based pricing calculator
+- Dynamic cost multipliers
+- Monthly vs annual billing simulation
+
+### 🖼️ AI Gallery System
+- Categorized AI artwork display
+- Lightbox preview system
+- Metadata overlay (model, seed, resolution)
+
+### 🤖 FAQ Chat Assistant
+- Intent-based chatbot system
+- Quick reply suggestions
+- Knowledge-base driven responses
+
+### 🌌 Canvas Particle Engine
+- High-performance background animation
+- GPU-friendly rendering approach
+- Zero layout shift optimization
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js 16 (App Router)
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- Framer Motion
+- shadcn/ui
+- Lucide Icons
+
+### Backend
+- Next.js API Routes
+- Mock AI Generation Engine
+- JSON-based model registry system
+
+---
+
+## 📁 Project Structure
+
+```text
 app/
 ├── api/
 │   ├── generate/
-│   │   └── route.ts         # Mock AI Image generation endpoint
 │   └── models/
-│       └── route.ts         # List available models
-├── globals.css              # Custom styling definitions & Tailwind setup
-├── layout.tsx               # Root layout with chatbot & error interceptor
-└── page.tsx                 # Main portal layout
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
 components/
-├── ui/                      # shadcn & layout blocks (buttons, dialogs, cards)
-├── chatbot.tsx              # Conversational FAQ assistant
-├── features.tsx             # Core platform advantages grid
-├── footer.tsx               # Site footer & CTA section
-├── gallery.tsx              # Media showcase & lightbox
-├── hero.tsx                 # Slideshow showcasing presets
-├── models.tsx               # Model spec tables
-├── navbar.tsx               # Header navigations & user profiles
-├── particle-bg.tsx          # Custom HTML5 Canvas ambient background
-├── pricing.tsx              # Plans, credit estimator, and checkout wizard
-├── prompt-demo.tsx          # Interactive image generation simulator
-└── scroll-animate.tsx       # Viewport entry animation trigger
+├── chatbot.tsx
+├── features.tsx
+├── footer.tsx
+├── gallery.tsx
+├── hero.tsx
+├── models.tsx
+├── navbar.tsx
+├── particle-bg.tsx
+├── pricing.tsx
+├── prompt-demo.tsx
+└── scroll-animate.tsx
+
 hooks/
-└── useImageGeneration.ts    # Custom React Hook for API calls
+└── useImageGeneration.ts
+
 lib/
-├── api-config.ts            # Constants, models configuration, pricing matrices
-└── utils.ts                 # Classname tailwind mergers
+├── api-config.ts
+└── utils.ts
 ```
 
 ---
 
-## 4. Feature Details
+## 🔍 SEO Optimization (GitHub Topics)
 
-### 1. Model Engines Configured
-Users can configure and run simulations on three different AI generators:
-1. **Phoenix Pro** (Default): Exceptional quality, premium details, and rich composition. Cost: **$0.04/image**.
-2. **Quantum Ultra**: Speed-optimized model for rapid prototyping and concept art. Cost: **$0.02/image**.
-3. **Nova Light**: Ultra-fast lightweight model for drafts. Cost: **$0.01/image**.
+Add these to your GitHub repo:
 
-### 2. Conversational FAQ Intents (`components/chatbot.tsx`)
-The bot classifies user text queries and offers predefined rich answers on the following:
-- **Pricing**: Explains Starter (Free), Professional, and Enterprise subscriptions.
-- **Models**: Compares speeds and costs between Phoenix, Quantum, and Nova.
-- **API Access**: Points to JSON endpoints, headers, and [BACKEND_INTEGRATION.md](file:///d:/AI%20Text-to-Image-Platform/BACKEND_INTEGRATION.md).
-- **Quality and Resolution**: Evaluates the aspect ratio cost factors.
-- **How to Use**: Step-by-step guide on generating images inside the Prompt Demo.
+```
+ai image generator, nextjs 16, react 19, typescript, saas platform, 
+ai art generator, prompt engineering, framer motion ui, tailwind css, 
+glassmorphism ui, full stack nextjs app, ai tools platform
+```
 
-### 3. Local Resource Optimization
-To improve reliability, reduce external network overhead, and offer immediate presentation capability, all 19 image assets used in the **Hero Slideshow** and **Gallery Showcase** have been migrated from external Pollinations AI endpoints to local high-resolution assets stored in `/public/images/hero/` and `/public/images/gallery/`.
+---
+
+## 📊 GitHub Stats (Optional Add-On)
+
+```md
+![GitHub stars](https://img.shields.io/github/stars/your-repo?style=social)
+![GitHub forks](https://img.shields.io/github/forks/your-repo?style=social)
+![GitHub issues](https://img.shields.io/github/issues/your-repo)
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/your-username/pixelforge-ai.git
+```
+
+### 2. Move into project
+
+```bash
+cd pixelforge-ai
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Run development server
+
+```bash
+npm run dev
+```
+
+### 5. Open application
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 🚀 Performance Highlights
+
+- ⚡ Instant UI rendering with App Router
+- 🧠 Optimized prompt evaluation logic
+- 🎨 GPU-accelerated animations
+- 📦 Modular scalable architecture
+- 🔥 Zero external AI dependency latency
+
+---
+
+## 📝 License
+
+MIT License
