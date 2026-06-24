@@ -41,9 +41,6 @@ A live version of the application is hosted here:
 
 ---
 
-<img width="2856" height="2224" alt="AI Text to Image Diagram" src="https://github.com/user-attachments/assets/258b8ba7-3a7f-489a-82ad-f20291d5bc6a" />
-
-
 ## ✨ Key Features
 
 ### 🎯 AI Prompt Generation Engine
@@ -121,6 +118,8 @@ A live version of the application is hosted here:
 </p>
 
 ---
+
+<img width="2856" height="2224" alt="AI Text to Image Diagram" src="https://github.com/user-attachments/assets/258b8ba7-3a7f-489a-82ad-f20291d5bc6a" />
 
 ## 📁 Project Structure
 
